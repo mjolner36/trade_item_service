@@ -1,0 +1,17 @@
+env: "local" #dev,prod
+storage_path: "./storage/trade.db"
+token_ttl: 1h
+grpc:
+  port: 44044
+  timeout: 10h
+
+postgreSql:
+  host: localhost
+  port: 5432
+  name: postgres
+  username: postgres
+  password: postgres
+  ssl_Mode: disable
+  pool_max_conns: 10
+  pool_max_conn_lifetime: 300s
+  pool_max_conn_idle_time: 150s
